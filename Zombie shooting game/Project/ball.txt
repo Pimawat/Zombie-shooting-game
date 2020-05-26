@@ -1,0 +1,117 @@
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace newballgame
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        class balls
+        {
+            public int v_x;
+            public int v_y;
+            public int b_x;
+            public int b_y;
+        }
+
+        List<balls> list_balls = new List<balls>();
+        int count = -1;
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            
+
+            for (int i = 0; i < list_balls.Count; i++)
+            {
+                g.FillEllipse(Brushes.Black, list_balls[i].b_x - 10, list_balls[i].b_y - 10, 30, 30);
+            }
+        }
+
+        private void start_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            balls tmp = new balls();
+            count = 1;
+            tmp.b_x = 220;
+            tmp.b_y = 20;
+            tmp.v_x = 0;
+            tmp.v_y = 0;
+            list_balls.Add(tmp);
+            for (int i = 0; i < list_balls.Count; i++)
+            {
+                list_balls[i].v_y = 15;
+                list_balls[i].v_x = 1;
+            }
+        }
+
+        private void right_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < list_balls.Count; i++) list_balls[i].v_x += 5;
+        }
+
+        private void left_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < list_balls.Count; i++) list_balls[i].v_x -= 5;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (count == 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Win");
+            }
+            else
+            {
+                for (int i = 0; i < list_balls.Count; i++)
+                {
+                    list_balls[i].b_x += list_balls[i].v_x;
+                    list_balls[i].b_y += list_balls[i].v_y;
+                    if ((list_balls[i].b_x > pictureBox1.Width) || (list_balls[i].b_x < 0)) list_balls[i].v_x = -list_balls[i].v_x;
+                    if (list_balls[i].b_y < 0) list_balls[i].v_y = -list_balls[i].v_y;
+                    if (list_balls[i].b_y > pictureBox1.Height)
+                    {
+                        balls tmp1 = new balls();
+                        count++;
+                        tmp1.b_x = list_balls[i].b_x;
+                        tmp1.b_y = list_balls[i].b_y;
+                        tmp1.v_x = -list_balls[i].v_x;
+                        tmp1.v_y = -list_balls[i].v_y;
+                        list_balls.Add(tmp1);
+                        list_balls[i].v_y = -list_balls[i].v_y;
+                    }
+                    Refresh();
+                }
+            }
+            
+            
+        }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            for (int i = 0; i < list_balls.Count; i++)
+            {
+                if (((e.X < list_balls[i].b_x + 15) && (e.X > list_balls[i].b_x - 15)) && ((e.Y < list_balls[i].b_y + 15) && (e.Y > list_balls[i].b_y - 15)))
+                {
+                    list_balls.Remove(list_balls[i]);
+                    count--;
+                    
+                }
+                Refresh();
+            }
+        }
+    }
+}

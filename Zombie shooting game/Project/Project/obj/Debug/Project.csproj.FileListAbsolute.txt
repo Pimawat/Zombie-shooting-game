@@ -1,0 +1,30 @@
+c:\users\user\source\repos\Project\Project\bin\Debug\Project.exe.config
+c:\users\user\source\repos\Project\Project\bin\Debug\Project.exe
+c:\users\user\source\repos\Project\Project\bin\Debug\Project.pdb
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.Form1.resources
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.Properties.Resources.resources
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.exe
+c:\users\user\source\repos\Project\Project\obj\Debug\Project.pdb
+C:\Users\User\Desktop\Project\Project\bin\Debug\Project.exe.config
+C:\Users\User\Desktop\Project\Project\bin\Debug\Project.exe
+C:\Users\User\Desktop\Project\Project\bin\Debug\Project.pdb
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.exe
+C:\Users\User\Desktop\Project\Project\obj\Debug\Project.pdb
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\bin\Debug\Project.exe.config
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\bin\Debug\Project.exe
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\bin\Debug\Project.pdb
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.exe
+C:\Users\User\Desktop\Taam's work\App Dev\Project\Project\obj\Debug\Project.pdb
